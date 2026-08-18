@@ -79,7 +79,7 @@
             border-radius: 10px;
             border-left: 3px solid #34d399;
         }
-        .info-item.full { grid-column: 1 / -1; }
+        .info-item.full { grid-column: 1 / -1; margin-top: 4px; }
         .info-label {
             font-size: 11px;
             color: #64748b;
@@ -135,16 +135,17 @@
                 <div class="info-label">Address</div>
                 <div class="info-value"><?= $address ?></div>
             </div>
-           <div class="info-item">
+            <div class="info-item">
                 <div class="info-label">Contact</div>
                 <div class="info-value"><?= $contact ?></div>
             </div>
-            <div class="info-item full">
+            <div class="info-item">
                 <div class="info-label">Skills</div>
                 <div class="info-value"><?= $skill ?></div>
             </div>
-           <div class="info-item full">
+            <div class="info-item full">
                 <div class="info-label">Hobbies</div>
+                <div class="info-value"><?= $hobbies ?></div>
             </div>
             <div class="info-item full">
                 <div class="info-label">Social Media</div>
