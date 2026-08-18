@@ -26,7 +26,7 @@
             <p><strong>Section:</strong> <?= $section ?></p>
             <p><strong>Email:</strong> <?= $email ?></p>
         </div>
-        <?php $_SESSION['vincearthurmelegrito_profile_access'] = true; ?>
+       <?php $_SESSION['vincearthurmelegrito_profile_access'] = true; ?>
     </div>
 </body>
 </html>

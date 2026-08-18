@@ -18,7 +18,7 @@
             <a href="<?= site_url('student') ?>">Home</a>
             <a href="<?= site_url('student/profile') ?>">Student Profile</a>
         </nav>
-        <span class="badge">Access Granted</span>
+        <span class="badge">Nakapasok kana sa aking info maraming salamat</span>
         <h1>Student Profile</h1>
         <div class="info">
             <p><strong>Student ID:</strong> <?= $student_id ?></p>
@@ -28,6 +28,8 @@
             <p><strong>Section:</strong> <?= $section ?></p>
             <p><strong>Email:</strong> <?= $email ?></p>
             <p><strong>Address:</strong> <?= $address ?></p>
+            <p><strong>Contact:</strong> <?= $contact ?></p>
+            <p><strong>Skill:</strong> <?= $skill ?></p>
             <p><strong>Hobbies:</strong> <?= $hobbies ?></p>
         </div>
     </div>

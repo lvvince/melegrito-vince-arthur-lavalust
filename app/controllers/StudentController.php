@@ -19,22 +19,19 @@ class StudentController extends Controller
 
     public function profile()
     {
-        return $this->middleware->run(
-            ['student_access'],
-            function () {
-                $student = [
-                    'student_id' => 'MCC2024-00249',
-                    'name'       => 'Vince Arthur N Melegrito',
-                    'course'     => 'Bachelor of Science in Information Technology',
-                    'year'       => '3rd Year',
-                    'section'    => '3-F5',
-                    'email'      => 'vincemelegrito55@gmail.com',
-                    'address'    => 'Del Pilar Naujan, Oriental Mindoro',
-                    'hobbies'    => 'Coding, gaming, IoT tinkering'
-                ];
+        $student = [
+            'student_id' => 'MCC2024-00249',
+            'name'       => 'Vince Arthur N Melegrito',
+            'course'     => 'Bachelor of Science in Information Technology',
+            'year'       => '3rd Year',
+            'section'    => '3-F5',
+            'email'      => 'vincemelegrito55@gmail.com',
+            'address'    => 'Del Pilar Naujan, Oriental Mindoro',
+            'contact'    => '0970-955-6124',
+            'skill'      => 'Web Development, PHP, JavaScript',
+            'hobbies'    => 'Watching Movie, gaming, Playing Chess'
+        ];
 
-                $this->call->view('student/profile', $student);
-            }
-        );
+        $this->call->view('student/profile', $student);
     }
 }
