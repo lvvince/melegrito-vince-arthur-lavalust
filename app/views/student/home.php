@@ -6,7 +6,7 @@
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
-            font-family: 'Segoe UI', system-ui, sans-serif;
+            font-family: 'Segoe UI', sans-serif;
             background: radial-gradient(circle at top left, #1e1b4b, #0f172a 60%);
             color: #e2e8f0;
             min-height: 100vh;
@@ -29,24 +29,16 @@
         nav {
             display: flex;
             justify-content: center;
-            gap: 24px;
+            gap: 15px;
             margin-bottom: 36px;
         }
         nav a {
-            color: #94a3b8;
+            color: #38bdf8;
             text-decoration: none;
-            font-size: 14px;
-            font-weight: 600;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
-            padding-bottom: 4px;
-            border-bottom: 2px solid transparent;
-            transition: all 0.2s ease;
+            font-weight: bold;
         }
-        nav a:hover, nav a.active {
-            color: #818cf8;
-            border-bottom-color: #818cf8;
-        }
+        nav a:hover { text-decoration: underline; }
+        nav a.active { text-decoration: underline; }
         .badge {
             display: inline-block;
             background: rgba(129, 140, 248, 0.15);

@@ -4,59 +4,37 @@
     <title>Vince Arthur Melegrito | Student Profile</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
-            font-family: 'Segoe UI', system-ui, sans-serif;
-            background: radial-gradient(circle at top left, #052e2b, #0f172a 60%);
+            font-family: 'Segoe UI', sans-serif;
+            background: #0f172a;
             color: #e2e8f0;
-            min-height: 100vh;
+            margin: 0;
+            padding: 40px 20px;
             display: flex;
-            align-items: center;
             justify-content: center;
-            padding: 20px;
         }
         .card {
-            max-width: 520px;
+            max-width: 500px;
             width: 100%;
-            background: rgba(30, 41, 59, 0.8);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(148, 163, 184, 0.15);
-            padding: 44px 40px;
-            border-radius: 20px;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 24px;
-            margin-bottom: 28px;
+            background: #1e293b;
+            padding: 35px;
+            border-radius: 12px;
         }
         nav a {
-            color: #94a3b8;
+            color: #38bdf8;
             text-decoration: none;
-            font-size: 14px;
-            font-weight: 600;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
-            padding-bottom: 4px;
-            border-bottom: 2px solid transparent;
-            transition: all 0.2s ease;
+            margin-right: 15px;
+            font-weight: bold;
         }
-        nav a:hover, nav a.active {
-            color: #34d399;
-            border-bottom-color: #34d399;
-        }
+        nav a:hover { text-decoration: underline; }
+        nav a.active { text-decoration: underline; }
         .header-row {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            margin-bottom: 24px;
+            margin-top: 20px;
         }
-        h1 {
-            font-size: 26px;
-            font-weight: 700;
-            color: #f1f5f9;
-        }
+        h1 { color: #38bdf8; }
         .badge {
             background: rgba(52, 211, 153, 0.15);
             color: #34d399;
@@ -68,32 +46,13 @@
             text-transform: uppercase;
             white-space: nowrap;
         }
-        .info-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 16px;
+        .row {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
         }
-        .info-item {
-            background: rgba(15, 23, 42, 0.5);
-            padding: 14px 16px;
-            border-radius: 10px;
-            border-left: 3px solid #34d399;
-        }
-        .info-item.full { grid-column: 1 / -1; margin-top: 4px; }
-        .info-label {
-            font-size: 11px;
-            color: #64748b;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            font-weight: 600;
-            margin-bottom: 4px;
-        }
-        .info-value {
-            font-size: 15px;
-            color: #e2e8f0;
-            font-weight: 500;
-            word-break: break-word;
-        }
+        .row span:first-child { color: #94a3b8; }
+        .row a { color: #38bdf8; }
     </style>
 </head>
 <body>
@@ -106,52 +65,18 @@
             <h1>Student Profile</h1>
             <span class="badge">Nakapasok kana sa aking info</span>
         </div>
-        <div class="info-grid">
-            <div class="info-item">
-                <div class="info-label">Student ID</div>
-                <div class="info-value"><?= $student_id ?></div>
-            </div>
-            <div class="info-item">
-                <div class="info-label">Name</div>
-                <div class="info-value"><?= $name ?></div>
-            </div>
-            <div class="info-item full">
-                <div class="info-label">Course</div>
-                <div class="info-value"><?= $course ?></div>
-            </div>
-            <div class="info-item">
-                <div class="info-label">Year Level</div>
-                <div class="info-value"><?= $year ?></div>
-            </div>
-            <div class="info-item">
-                <div class="info-label">Section</div>
-                <div class="info-value"><?= $section ?></div>
-            </div>
-            <div class="info-item full">
-                <div class="info-label">Email</div>
-                <div class="info-value"><?= $email ?></div>
-            </div>
-            <div class="info-item full">
-                <div class="info-label">Address</div>
-                <div class="info-value"><?= $address ?></div>
-            </div>
-            <div class="info-item">
-                <div class="info-label">Contact</div>
-                <div class="info-value"><?= $contact ?></div>
-            </div>
-            <div class="info-item">
-                <div class="info-label">Skills</div>
-                <div class="info-value"><?= $skill ?></div>
-            </div>
-            <div class="info-item full">
-                <div class="info-label">Hobbies</div>
-                <div class="info-value"><?= $hobbies ?></div>
-            </div>
-            <div class="info-item full">
-                <div class="info-label">Social Media</div>
-                <div class="info-value"><a href="<?= $socmed ?>" target="_blank" style="color:#34d399; text-decoration:none;"><?= $socmed ?></a></div>
-            </div>
-        </div>
+
+        <div class="row"><span>Student ID</span><span><?= $student_id ?></span></div>
+        <div class="row"><span>Name</span><span><?= $name ?></span></div>
+        <div class="row"><span>Course</span><span><?= $course ?></span></div>
+        <div class="row"><span>Year Level</span><span><?= $year ?></span></div>
+        <div class="row"><span>Section</span><span><?= $section ?></span></div>
+        <div class="row"><span>Email</span><span><?= $email ?></span></div>
+        <div class="row"><span>Address</span><span><?= $address ?></span></div>
+        <div class="row"><span>Contact</span><span><?= $contact ?></span></div>
+        <div class="row"><span>Skills</span><span><?= $skill ?></span></div>
+        <div class="row"><span>Hobbies</span><span><?= $hobbies ?></span></div>
+        <div class="row"><span>Social Media</span><a href="<?= $socmed ?>" target="_blank">Facebook</a></div>
     </div>
 </body>
 </html>
