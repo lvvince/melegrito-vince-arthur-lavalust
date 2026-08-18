@@ -104,8 +104,8 @@
             <a href="<?= site_url('student/profile') ?>">Student Profile</a>
         </nav>
         <span class="badge">Student Portal</span>
-        <h1>Welcome, Vince Arthur</h1>
-        <p class="subtitle">This is the student information system for the Web Systems and Technologies laboratory activity. Click below to view the full student profile.</p>
+        <h1>Welcome, Vince Melegrito</h1>
+        <p class="subtitle">Welcome to my student information.</p>
         <a href="<?= site_url('student/profile') ?>" class="btn">View Student Profile</a>
         <div class="footer">BSIT · 3-F5 · MCC2024-00249</div>
         <?php $_SESSION['vincearthurmelegrito_profile_access'] = true; ?>

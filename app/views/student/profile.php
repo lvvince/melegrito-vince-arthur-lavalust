@@ -104,7 +104,7 @@
         </nav>
         <div class="header-row">
             <h1>Student Profile</h1>
-            <span class="badge">Access Granted</span>
+            <span class="badge">Nakapasok kana sa aking info</span>
         </div>
         <div class="info-grid">
             <div class="info-item">
@@ -139,13 +139,13 @@
                 <div class="info-label">Contact</div>
                 <div class="info-value"><?= $contact ?></div>
             </div>
-            <div class="info-item">
-                <div class="info-label">Skills</div>
-                <div class="info-value"><?= $skill ?></div>
-            </div>
-            <div class="info-item full">
+           <div class="info-item full">
                 <div class="info-label">Hobbies</div>
                 <div class="info-value"><?= $hobbies ?></div>
+            </div>
+            <div class="info-item full">
+                <div class="info-label">Social Media</div>
+                <div class="info-value"><a href="<?= $socmed ?>" target="_blank" style="color:#34d399; text-decoration:none;"><?= $socmed ?></a></div>
             </div>
         </div>
     </div>

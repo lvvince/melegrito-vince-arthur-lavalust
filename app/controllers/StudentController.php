@@ -19,8 +19,9 @@ class StudentController extends Controller
             'email'      => 'vincemelegrito55@gmail.com',
             'address'    => 'Del Pilar Naujan, Oriental Mindoro',
             'contact'    => '0970-955-6124',
-            'skill'      => 'Web Development, PHP, JavaScript',
-            'hobbies'    => 'Watching Movie, gaming, Playing Chess'
+            'skill'      => 'Web Development, Time management, Collaboration',
+            'hobbies'    => 'Watching Movie, gaming, Playing Chess',
+            'socmed'     => 'https://www.facebook.com/vince.melegrito.18'
         ];
 
         $this->call->view('student/profile', $student);
