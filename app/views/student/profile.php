@@ -135,13 +135,16 @@
                 <div class="info-label">Address</div>
                 <div class="info-value"><?= $address ?></div>
             </div>
-            <div class="info-item">
+           <div class="info-item">
                 <div class="info-label">Contact</div>
                 <div class="info-value"><?= $contact ?></div>
             </div>
+            <div class="info-item full">
+                <div class="info-label">Skills</div>
+                <div class="info-value"><?= $skill ?></div>
+            </div>
            <div class="info-item full">
                 <div class="info-label">Hobbies</div>
-                <div class="info-value"><?= $hobbies ?></div>
             </div>
             <div class="info-item full">
                 <div class="info-label">Social Media</div>
