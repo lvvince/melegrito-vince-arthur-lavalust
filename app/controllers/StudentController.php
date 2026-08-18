@@ -5,16 +5,7 @@ class StudentController extends Controller
 {
     public function index()
     {
-        $student = [
-            'student_id' => 'MCC2024-00249',
-            'name'       => 'Vince Arthur N Melegrito',
-            'course'     => 'Bachelor of Science in Information Technology',
-            'year'       => '3rd Year',
-            'section'    => '3-F5',
-            'email'      => 'vincemelegrito55@gmail.com'
-        ];
-
-        $this->call->view('student/home', $student);
+        $this->call->view('student/home');
     }
 
     public function profile()
